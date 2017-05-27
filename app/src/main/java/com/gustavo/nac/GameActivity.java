@@ -87,13 +87,14 @@ public class GameActivity extends AppCompatActivity {
 
         // Verificando sexo
         if (bundle.containsKey("VALOR_SEXO")) {
-            // Geting do valor que definira o sexo selecionado nesta activity, através da key "VALOR_SEXO"
-            int vlSexo = bundle.getInt("VALOR_SEXO");
 
-            if (vlSexo == 1)  // Se vlSexo for 1: O background da Image View será Masculino
+            int vlSexo = bundle.getInt("VALOR_SEXO"); // Geting do valor que definira o sexo selecionado nesta activity, através da key "VALOR_SEXO"
+
+            if (vlSexo == 1)  // Se vlSexo for 1: O background da ImageView será Masculino
             {
                 ivLogo_Sexo.setBackgroundResource(R.drawable.faendal_avatar);
-            } else if (vlSexo == 2) // Se vlSexo for 2: O background da Image View será Feminino
+
+            } else if (vlSexo == 2) // Se vlSexo for 2: O background da ImageView será Feminino
             {
                 ivLogo_Sexo.setBackgroundResource(R.drawable.serana_avatar);
             }
@@ -109,6 +110,7 @@ public class GameActivity extends AppCompatActivity {
             tvFichas_Game.setText(vlFichas);
         }
 
+        // Funcao que iniciara a Slot Machine
         btnRodar.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -121,6 +123,9 @@ public class GameActivity extends AppCompatActivity {
 
             }
         });
+
+
+        // Esta estrutura de codigo abaixo depende de outra classe java(Roda.java) para ter funcionamento
 
     }
 

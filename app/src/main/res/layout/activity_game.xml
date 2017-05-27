@@ -95,7 +95,7 @@
 
     </LinearLayout>
 
-
+    <!--Layout Imagens da Slot-->
     <LinearLayout
 
         android:id="@+id/llRoleta"

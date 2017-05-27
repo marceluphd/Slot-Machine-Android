@@ -63,11 +63,8 @@ public class GameConfigurationActivity extends AppCompatActivity
 
         etNome = (EditText)findViewById(R.id.etNome);
 
-        //Toast toast = Toast.makeText(context, text, duration);
 
-
-
-
+        // Criando um obj que armazenara a fonte do projeto
         Typeface fonte = Typeface.createFromAsset(getAssets(), "fonts/principal_font.ttf");
 
 
@@ -84,7 +81,7 @@ public class GameConfigurationActivity extends AppCompatActivity
 
 
 
-        // Função que controla a imagem e Radio Button
+        // Funcao que controla a imagem e Radio Button
         rbMasculino.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -139,10 +136,10 @@ public class GameConfigurationActivity extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                // Criando uma nova intenção para chamar a proxima Activity - linha 1
-                // Obtendo dados do EditText, onde o usuário insere seu nome e com isso passar como parametro para a proxima Activity através de uma key "NOME" - linha 2
-                // Obtendo o valor da variável que definira o sexo, ela será acessáda através de uma key "VALOR_SEXO" - linha 3
-                // Obtendo o valor da da variável valorFichas que definirá a quantidade de fichas selecionada pelo usuário
+                // Criando uma nova intencao para chamar a proxima Activity - linha 1
+                // Obtendo dados do EditText, onde o usuario insere seu nome e com isso passar como parametro para a proxima Activity atraves de uma key "NOME" - linha 2
+                // Obtendo o valor da variavel que definira o sexo, ela sera acessada atraves de uma key "VALOR_SEXO" - linha 3
+                // Obtendo o valor em fichas selecionado em um spinner pelo usuario - linha 4
                 // Iniciando a Intent it_jogar que aplicara todos os comandos - linha 5
 
                 Intent it_jogar = new Intent(GameConfigurationActivity.this, GameActivity.class); // linha 1

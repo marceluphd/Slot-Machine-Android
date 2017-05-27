@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">SlotMachine</string>
+
+    <string name="btn_jogar">Jogar</string>
+
+
+    <!---Itens do Array-->
+    <string name="Septim_1">1 Septim</string>
+    <string name="Septim_2">2 Septims</string>
+    <string name="Septim_3">3 Septims</string>
+    <string name="Septim_4">4 Septims</string>
+    <string name="Septim_5">5 Septims</string>
+
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <array name="QuantidadeFichas">
+
+       <item>@string/Septim_1</item>
+       <item>@string/Septim_2</item>
+       <item>@string/Septim_3</item>
+       <item>@string/Septim_4</item>
+       <item>@string/Septim_5</item>
+
+   </array>
+
+</resources>

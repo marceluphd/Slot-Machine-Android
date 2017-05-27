@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gustavo.nac.GameActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background_menu">
+
+
+    <!--Layout topo (Nome) (Sexo)-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/button_color"
+        android:orientation="horizontal"
+        android:paddingBottom="20px"
+        android:id="@+id/llHeader">
+
+
+        <ImageView
+
+            android:id="@+id/ivLogo_Sexo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_gravity="center"/>
+
+
+        <TextView
+
+            android:id="@+id/tvLogo_Nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8px"
+            android:layout_alignParentTop="true"
+            android:padding="10px"
+            android:layout_gravity="center"
+
+
+            android:text="Nome"
+            android:textColor="@color/base_color"
+            android:textSize="16sp"/>
+
+
+    </LinearLayout>
+
+
+    <!--Layout topo (Timer) (Fichas)-->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llSubHeader"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/llHeader"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+
+            android:id="@+id/tvTimer_Game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TIMER"
+            android:layout_marginLeft="10px"
+            android:layout_weight="0.5"
+
+            android:textSize="20sp"
+            android:textColor="@color/base_color"
+            android:textStyle="bold"/>
+
+
+        <TextView
+
+            android:id="@+id/tvFichas_Game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8px"
+            android:layout_marginLeft="10px"
+            android:layout_weight="1"
+
+            android:textSize="20sp"
+            android:text="FICHAS"
+            android:textColor="@color/base_color"
+            android:textStyle="bold"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:id="@+id/llRoleta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/color_transparent"
+        android:layout_above="@+id/btRodar"
+        android:layout_marginBottom="90dp">
+
+
+        <ImageView
+
+            android:id="@+id/ivImagem_1"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:background="@drawable/imagem_1"
+            android:layout_weight="1"/>
+
+        <ImageView
+
+            android:id="@+id/ivImagem_2"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:background="@drawable/imagem_2"
+            android:layout_weight="1"/>
+
+
+        <ImageView
+
+            android:id="@+id/ivImagem_3"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:background="@drawable/imagem_3"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btRodar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/button_customization"
+        android:text="@string/btn_jogar"
+        android:textColor="@color/base_color"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp" />
+
+</RelativeLayout>

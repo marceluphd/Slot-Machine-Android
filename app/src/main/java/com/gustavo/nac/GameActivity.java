@@ -2,10 +2,12 @@ package com.gustavo.nac;
 
 
 import android.graphics.Typeface;
+import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.Button;
+import android.widget.Chronometer;
 import android.widget.ImageView;
 import android.widget.TextView;
 import java.util.Random;
@@ -18,7 +20,7 @@ import android.widget.Toast;
 public class GameActivity extends AppCompatActivity {
 
     private TextView tvLogo_Nome;
-    private TextView tvTimer_Game;
+    private Chronometer tvTimer;
     private TextView tvFichas_Game;
     private TextView btRodar;
 
@@ -48,7 +50,7 @@ public class GameActivity extends AppCompatActivity {
 
         // Instânciando elementos da tela
         tvLogo_Nome = (TextView) findViewById(R.id.tvLogo_Nome);
-        tvTimer_Game = (TextView) findViewById(R.id.tvTimer_Game);
+        tvTimer = (Chronometer) findViewById(R.id.tvTimer);
         tvFichas_Game = (TextView) findViewById(R.id.tvFichas_Game);
         btRodar = (TextView) findViewById(R.id.btRodar);
 
@@ -66,10 +68,14 @@ public class GameActivity extends AppCompatActivity {
         // Instânciando fonte
         Typeface fonte = Typeface.createFromAsset(getAssets(), "fonts/principal_font.ttf");
 
+
+        // Criando cronometro e inicializando cronomero junto com a GameActivity
+        tvTimer.setBase(SystemClock.elapsedRealtime());
+        tvTimer.start();
+
         // Aplicando fonte
         tvLogo_Nome.setTypeface(fonte);
-        tvTimer_Game.setTypeface(fonte);
-        tvTimer_Game.setTypeface(fonte);
+        tvTimer.setTypeface(fonte);
         tvFichas_Game.setTypeface(fonte);
         btRodar.setTypeface(fonte);
 

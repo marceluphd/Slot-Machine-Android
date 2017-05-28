@@ -63,9 +63,9 @@
         android:layout_alignParentStart="true">
 
 
-        <TextView
+        <Chronometer
 
-            android:id="@+id/tvTimer_Game"
+            android:id="@+id/chTimer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TIMER"

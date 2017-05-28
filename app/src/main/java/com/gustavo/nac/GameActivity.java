@@ -20,13 +20,9 @@ import android.widget.Toast;
 public class GameActivity extends AppCompatActivity {
 
     private TextView tvLogo_Nome;
-    private Chronometer tvTimer;
+    private Chronometer chTimer;
     private TextView tvFichas_Game;
     private TextView btRodar;
-
-    private ImageView imagem_1;
-    private ImageView imagem_2;
-    private ImageView imagem_3;
 
     private Button btnRodar;
 
@@ -50,7 +46,7 @@ public class GameActivity extends AppCompatActivity {
 
         // Instânciando elementos da tela
         tvLogo_Nome = (TextView) findViewById(R.id.tvLogo_Nome);
-        tvTimer = (Chronometer) findViewById(R.id.tvTimer);
+        chTimer = (Chronometer) findViewById(R.id.chTimer);
         tvFichas_Game = (TextView) findViewById(R.id.tvFichas_Game);
         btRodar = (TextView) findViewById(R.id.btRodar);
 
@@ -70,12 +66,12 @@ public class GameActivity extends AppCompatActivity {
 
 
         // Criando cronometro e inicializando cronomero junto com a GameActivity
-        tvTimer.setBase(SystemClock.elapsedRealtime());
-        tvTimer.start();
+        chTimer.setBase(SystemClock.elapsedRealtime());
+        chTimer.start();
 
         // Aplicando fonte
         tvLogo_Nome.setTypeface(fonte);
-        tvTimer.setTypeface(fonte);
+        chTimer.setTypeface(fonte);
         tvFichas_Game.setTypeface(fonte);
         btRodar.setTypeface(fonte);
 
